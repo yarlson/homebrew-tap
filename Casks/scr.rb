@@ -3,33 +3,36 @@ cask "scr" do
   name "scr"
   desc "Automated terminal screenshots. Script interactions, capture PNGs."
   homepage "https://github.com/yarlson/scr"
-  version "0.1.2"
+  version "0.1.3"
 
   livecheck do
     skip "Auto-generated on release."
   end
 
   binary "scr"
+  depends_on formula: [
+      "ttyd",
+    ]
 
   on_macos do
     on_intel do
       url "https://github.com/yarlson/scr/releases/download/v#{version}/scr_#{version}_Darwin_x86_64.tar.gz"
-      sha256 "ecc6b57bf06a21299c2a5c4eddc2a740a14687694b1fe37820f689b68fecf5ae"
+      sha256 "73c6a028d87602e1528a19fb953b2aba8cb531610187433f7577d5c42ffd226a"
     end
     on_arm do
       url "https://github.com/yarlson/scr/releases/download/v#{version}/scr_#{version}_Darwin_arm64.tar.gz"
-      sha256 "f8ae0b9f744193cbe5489326639198c973e7e70368c256557292e419a0ae2aea"
+      sha256 "03667ca303a1241aa7e5e296c6162762cf1987a020391a2e1273e097df6af1c4"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/yarlson/scr/releases/download/v#{version}/scr_#{version}_Linux_x86_64.tar.gz"
-      sha256 "94d6dc64551fb0003690e96aa17793cdbc8a3ad3393c60fca615b7bd745dae3f"
+      sha256 "bf2a77fe2f7aa27facc1c02d12fc42628f6005a30b7675a3dd345ce9e4496c05"
     end
     on_arm do
       url "https://github.com/yarlson/scr/releases/download/v#{version}/scr_#{version}_Linux_arm64.tar.gz"
-      sha256 "ab8b2c27717a4d41dff9dfbef1b791409703d8ca994a6f31c527216daa356a24"
+      sha256 "5f33b19992cb688aa48918b88650c296bb874203acbb77b57a6dc9cfcda37d91"
     end
   end
 
