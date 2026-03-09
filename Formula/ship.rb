@@ -5,20 +5,20 @@
 class Ship < Formula
   desc "Transfer local Docker images to a remote host over SSH."
   homepage "https://github.com/yarlson/ship"
-  version "0.2.2"
+  version "0.2.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yarlson/ship/releases/download/v0.2.2/ship_0.2.2_darwin_amd64.tar.gz"
-      sha256 "e26aa05946da3f1045b6173b189703c50e916fecdfaf9df64bae698b1a73f5cc"
+      url "https://github.com/yarlson/ship/releases/download/v0.2.3/ship_0.2.3_darwin_amd64.tar.gz"
+      sha256 "4db4321535cb191b50555140e2f9a802e7ead258e0b84c4c23b26912d06d2a1a"
 
       define_method(:install) do
         bin.install "ship"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yarlson/ship/releases/download/v0.2.2/ship_0.2.2_darwin_arm64.tar.gz"
-      sha256 "a1fe33655c167001b5fc57057aa768f9bcc2276c6753d2e802fa736a1e02e1e7"
+      url "https://github.com/yarlson/ship/releases/download/v0.2.3/ship_0.2.3_darwin_arm64.tar.gz"
+      sha256 "82d4d3f1827eb94b82bc838416481a45bebfe6f1cfb4674c864614ad198e29e6"
 
       define_method(:install) do
         bin.install "ship"
@@ -28,15 +28,15 @@ class Ship < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yarlson/ship/releases/download/v0.2.2/ship_0.2.2_linux_amd64.tar.gz"
-      sha256 "2b387056e98e68114fc886d47c4f0fc23baf23c5781f94e409f0a88539053f37"
+      url "https://github.com/yarlson/ship/releases/download/v0.2.3/ship_0.2.3_linux_amd64.tar.gz"
+      sha256 "5962e26318f14891fd17f4bad710b106ec2623b7f8b61919962606b6f12787ca"
       define_method(:install) do
         bin.install "ship"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yarlson/ship/releases/download/v0.2.2/ship_0.2.2_linux_arm64.tar.gz"
-      sha256 "3138e03ebf63ccb9a20ba409255397f2a3b7baef79b198d12668851b78926e83"
+      url "https://github.com/yarlson/ship/releases/download/v0.2.3/ship_0.2.3_linux_arm64.tar.gz"
+      sha256 "c01775a8b6ecab25acb3c912f870834239a9015b358aae0b74b8f896f36852a0"
       define_method(:install) do
         bin.install "ship"
       end
