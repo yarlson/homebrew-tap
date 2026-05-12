@@ -5,21 +5,21 @@
 class Cmt < Formula
   desc "Generate meaningful git commit messages with Claude Code"
   homepage "https://github.com/yarlson/cmt"
-  version "0.9.0"
+  version "0.10.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yarlson/cmt/releases/download/v0.9.0/cmt_Darwin_x86_64.tar.gz"
-      sha256 "c2fdd8f72a39fa7054a9f1e970f35ee993bf0950dda9d595e41b3c93a6bbe9f4"
+      url "https://github.com/yarlson/cmt/releases/download/v0.10.0/cmt_Darwin_x86_64.tar.gz"
+      sha256 "a5725f0eccf0a9a5849ce6e707a554aa61359e53c74c17d4dd2eca165895df0e"
 
       define_method(:install) do
         bin.install "cmt"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yarlson/cmt/releases/download/v0.9.0/cmt_Darwin_arm64.tar.gz"
-      sha256 "17df4d8095450e29a64101c21f7f7bc8f41d9c63299d24dd73e04b9859687e04"
+      url "https://github.com/yarlson/cmt/releases/download/v0.10.0/cmt_Darwin_arm64.tar.gz"
+      sha256 "74d369c35f23dce403a2cc067d035e383d88ca0a759c60db5d2be39690a0139d"
 
       define_method(:install) do
         bin.install "cmt"
@@ -29,15 +29,15 @@ class Cmt < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yarlson/cmt/releases/download/v0.9.0/cmt_Linux_x86_64.tar.gz"
-      sha256 "380431ba8ceb83da5d31dbf3a477f00e6ed2b93549a088b5484fac72260a5558"
+      url "https://github.com/yarlson/cmt/releases/download/v0.10.0/cmt_Linux_x86_64.tar.gz"
+      sha256 "a41821f4ed543ebfea3e7d5f4b8217907e5b632c0d807887c24fd2e09bca95e2"
       define_method(:install) do
         bin.install "cmt"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yarlson/cmt/releases/download/v0.9.0/cmt_Linux_arm64.tar.gz"
-      sha256 "06140fd176c485f3a77f825d0e86c94f71b9c4315fb3309f4c51d1e2d3baec52"
+      url "https://github.com/yarlson/cmt/releases/download/v0.10.0/cmt_Linux_arm64.tar.gz"
+      sha256 "1fd67cb36dec44573bcc02e279ad2bace0aef0019001316ae6b4bf0af8bbc9c2"
       define_method(:install) do
         bin.install "cmt"
       end
