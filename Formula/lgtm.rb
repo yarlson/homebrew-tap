@@ -1,25 +1,25 @@
 class Lgtm < Formula
   desc "Plan and run Codex-backed local phase work"
   homepage "https://github.com/yarlson/lgtm"
-  version "0.17.0"
+  version "0.18.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/yarlson/lgtm/releases/download/v0.17.0/lgtm-v0.17.0-darwin-arm64.tar.gz"
-      sha256 "d4e236c2ac33d47bd0daac0ca3f976860344b44fe9af04639e02bd0fbfc80629"
+      url "https://github.com/yarlson/lgtm/releases/download/v0.18.0/lgtm-v0.18.0-darwin-arm64.tar.gz"
+      sha256 "5c2d9b20b973b0f05dcc201bc3e9fefe99248bf252a7efea7d5b33823302dc0a"
     else
-      url "https://github.com/yarlson/lgtm/releases/download/v0.17.0/lgtm-v0.17.0-darwin-amd64.tar.gz"
-      sha256 "47f21d45f03a1900789edfcca6b6042be4ebb9607ce5725ff4406b8773d38df9"
+      url "https://github.com/yarlson/lgtm/releases/download/v0.18.0/lgtm-v0.18.0-darwin-amd64.tar.gz"
+      sha256 "01e97f6a36bebc85612d2780f5247340c9719a6ebe28527a0866a5ec0075d166"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/yarlson/lgtm/releases/download/v0.17.0/lgtm-v0.17.0-linux-arm64.tar.gz"
-      sha256 "6878461f3d1ded951d0cd057ccb749b08a6977b95f8f1bebe76caaec15a86fb9"
+      url "https://github.com/yarlson/lgtm/releases/download/v0.18.0/lgtm-v0.18.0-linux-arm64.tar.gz"
+      sha256 "10415f3d62bc9177ab7b3a240f47d5e90808815bb4798f8474aaccacd872df3f"
     else
-      url "https://github.com/yarlson/lgtm/releases/download/v0.17.0/lgtm-v0.17.0-linux-amd64.tar.gz"
-      sha256 "27945a04b5d161ac814482911a3aa9673dbd465934d5b06824f51ee7d82b40f9"
+      url "https://github.com/yarlson/lgtm/releases/download/v0.18.0/lgtm-v0.18.0-linux-amd64.tar.gz"
+      sha256 "6df456dfd3f7eeef7af6bea47c9bae8cd20e85e2a5b86ab2b5c0163e297cf231"
     end
   end
 
