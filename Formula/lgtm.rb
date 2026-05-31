@@ -2,6 +2,7 @@ class Lgtm < Formula
   desc "Plan and run Codex-backed local phase work"
   homepage "https://github.com/yarlson/lgtm"
   version "0.19.1"
+  link_overwrite "bin/lgtm"
 
   on_macos do
     if Hardware::CPU.arm?
