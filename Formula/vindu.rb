@@ -1,9 +1,11 @@
+# Rendered by .github/workflows/release.yml on each tag and pushed to
+# yarlson/homebrew-tap. Edit this template, not the tap copy.
 class Vindu < Formula
   desc "Dynamic tiling window manager for macOS"
   homepage "https://github.com/yarlson/vindu"
-  url "https://github.com/yarlson/vindu/releases/download/v0.1.0/vindu-v0.1.0-macos-universal.tar.gz"
-  sha256 "4edceaf30cb42bfafb61bc1bbe28d84f5632d3d3c7590de4264157f0236994e7"
-  version "0.1.0"
+  url "https://github.com/yarlson/vindu/releases/download/v0.2.0/vindu-v0.2.0-macos-universal.tar.gz"
+  sha256 "d93aa9afeeb53872b0026377d0da1f9ee86d1fedee4e63cc7152f726dd028a3b"
+  version "0.2.0"
 
   depends_on :macos
 
