@@ -3,16 +3,16 @@
 class Vindu < Formula
   desc "Dynamic tiling window manager for macOS"
   homepage "https://github.com/yarlson/vindu"
-  url "https://github.com/yarlson/vindu/releases/download/v0.5.3/vindu-v0.5.3-macos-universal.zip"
-  version "0.5.3"
-  sha256 "feef4415bb81995d31a049db4bd89e98d638ce0b7ebf0e33a7261cb5e10e7f1c"
+  url "https://github.com/yarlson/vindu/releases/download/v0.6.0/vindu-v0.6.0-macos-universal.zip"
+  version "0.6.0"
+  sha256 "b64eaad1370398931764c0d01e9408f82711e660f9a1047a37ad193a7fa2dee2"
 
   depends_on :macos
 
   def install
     bin.install "vindud", "vinductl"
-    pkgshare.install "vindu.conf"
-    doc.install "README.md"
+    pkgshare.install "vindu.toml"
+    doc.install "README.md", "THIRD_PARTY_NOTICES.md"
   end
 
   def post_install
@@ -36,7 +36,7 @@ class Vindu < Formula
       Start now and at login:
         brew services start vindu
 
-      First start writes a default config to ~/.config/vindu/vindu.conf
+      First start writes a default config to ~/.config/vindu/vindu.toml
     EOS
   end
 
