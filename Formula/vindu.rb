@@ -3,9 +3,9 @@
 class Vindu < Formula
   desc "Dynamic tiling window manager for macOS"
   homepage "https://github.com/yarlson/vindu"
-  url "https://github.com/yarlson/vindu/releases/download/v0.5.0/vindu-v0.5.0-macos-universal.zip"
-  version "0.5.0"
-  sha256 "f13fdc87a61e7cf6653c8b989b60461af2e8372bebcd101d56813af6090b549d"
+  url "https://github.com/yarlson/vindu/releases/download/v0.5.1/vindu-v0.5.1-macos-universal.zip"
+  version "0.5.1"
+  sha256 "d1dfcfef84cef3bf0cf228c37050cd6fef73ec5ae374588c3b785fbe2c0b63ff"
 
   depends_on :macos
 
@@ -15,11 +15,17 @@ class Vindu < Formula
     doc.install "README.md"
   end
 
+  def post_install
+    log_dir = Pathname.new("~/Library/Logs/vindu").expand_path
+    log_dir.mkpath
+    chmod 0700, log_dir
+  end
+
   service do
     run [opt_bin/"vindud"]
     keep_alive successful_exit: false
-    log_path "/tmp/vindu.log"
-    error_log_path "/tmp/vindu.log"
+    log_path Pathname.new("~/Library/Logs/vindu/vindud.log").expand_path
+    error_log_path Pathname.new("~/Library/Logs/vindu/vindud.log").expand_path
   end
 
   def caveats
