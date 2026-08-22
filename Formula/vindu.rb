@@ -3,9 +3,9 @@
 class Vindu < Formula
   desc "Dynamic tiling window manager for macOS"
   homepage "https://github.com/yarlson/vindu"
-  url "https://github.com/yarlson/vindu/releases/download/v0.6.1/vindu-v0.6.1-macos-universal.zip"
-  version "0.6.1"
-  sha256 "7ee3cd3c2d7bc3728d169adaf4fa85ba589cd00e08a2ef888be757ad470a3b4a"
+  url "https://github.com/yarlson/vindu/releases/download/v0.6.2/vindu-v0.6.2-macos-universal.zip"
+  version "0.6.2"
+  sha256 "c547ccd7c1db9099e4183bbb472cc563b5256d2a60ecb7dcd6f60ac90bf0d004"
 
   depends_on :macos
 
