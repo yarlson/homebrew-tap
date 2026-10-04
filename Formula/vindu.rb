@@ -3,16 +3,16 @@
 class Vindu < Formula
   desc "Dynamic tiling window manager for macOS"
   homepage "https://github.com/yarlson/vindu"
-  url "https://github.com/yarlson/vindu/releases/download/v0.6.3/vindu-v0.6.3-macos-universal.zip"
-  version "0.6.3"
-  sha256 "befb0a69af1aa2bf0906774ddcbd6cc8d7323c26cd5d98e7c87ef24e7b8ea367"
+  url "https://github.com/yarlson/vindu/releases/download/v0.7.0/vindu-v0.7.0-macos-universal.zip"
+  version "0.7.0"
+  sha256 "35476d6b9d96e6ccfb589f6616dc62794b52a6c1342c640fa43afa2fc2c75dc8"
 
   depends_on :macos
 
   def install
     bin.install "vindud", "vinductl"
     pkgshare.install "vindu.toml"
-    doc.install "README.md", "THIRD_PARTY_NOTICES.md"
+    doc.install "README.md"
   end
 
   def post_install
